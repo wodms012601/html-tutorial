@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>table</title>
+		<style>
+			table,tr,th,td
+			{
+				border:1px solid #000000;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>HTML 테이블(그리드)만들기 &lt;table&gt;</h1>
+		<div>
+			<a href="./index.html">목록</a>
+		</div>
+		
+		<h3>1. table</h3>
+		<div>
+			<ul>
+				<li>테이블은 &lt;table&gt;태그를 사용</li>
+				<li>테이블 행은 &lt;tr&gt;을 사용</li>
+				<li>행을 셀(데이터를 가지는 요소)로 분할 하는 태그는 &lt;td&gt;를 사용</li>
+				<li>테이블의 너비, 테두리, 패딩, 셀간격, 경계설정 등은 CSS를 사용</li>
+			</ul>
+		</div>
+		<div>
+			<ol>
+				<li>&lt;table style="width:300px"&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp;  &lt;td&gt;Jill&lt;/td&gt;</li>
+				<li>&nbsp;  &lt;td&gt;Smith&lt;/td&gt;</li>
+				<li>&nbsp;  &lt;td&gt;50&lt;/td&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp;  &lt;td&gt;Eve&lt;/td&gt;</li>
+				<li>&nbsp;  &lt;td&gt;Jackson&lt;/td&gt;</li>
+				<li>&nbsp;  &lt;td&gt;94&lt;/td&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;/table&gt;</li>
+			</ol>
+		</div>
+		<div>
+			<ol>
+				<li>&lt;style&gt;</li>
+				<li>table,tr,th,td</li>
+				<li>{</li>
+				<li>border:1px solid black;</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+				<li> </li>
+				<li>&lt;style&gt;</li>
+				<li>table,tr,th,td</li>
+				<li>{</li>
+				<li>border-collapse:collapse</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+				<li> </li>
+				<li>&lt;style&gt;</li>
+				<li>th,td</li>
+				<li>{</li>
+				<li>padding:5px;</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+				<li> </li>
+				<li>&lt;style&gt;</li>
+				<li>table</li>
+				<li>{</li>
+				<li>border-spacing:5px;</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>		
+			</ol>
+		</div>
+		<div>
+			<!-- border:1px solid #000000로 한것 -->
+			<table>
+				<tr>
+					<td>jill</td>
+					<td>smith</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Eve</td>
+					<td>Jackson</td>
+					<td>94</td>
+				</tr>
+			</table>
+		</div>
+		<h3>2. &lt;th&gt; 열 제목 태그</h3>
+		<div>
+			<ol>
+				<li>&lt;table style="width:300px"&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp;  &lt;th&gt;First&lt;/th&gt;</li>
+				<li>&nbsp;  &lt;th&gt;Last&lt;/th&gt;</li>
+				<li>&nbsp;  &lt;th&gt;Points&lt;/th&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp;  &lt;td&gt;Eve&lt;/td&gt;</li>
+				<li>&nbsp;  &lt;td&gt;Jackson&lt;/td&gt;</li>
+				<li>&nbsp;  &lt;td&gt;94&lt;/td&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;/table&gt;</li>
+			</ol>
+		</div>
+		
+		<h3>3. 테이블 관련 태그</h3>
+		<div><a href="https://www.w3schools.com/tags/tag_caption.asp">&lt;caption&gt;</a></div>
+		<div><a href="https://www.w3schools.com/tags/tag_colgroup.asp">&lt;colgroup&gt;</a></div>
+		<div><a href="https://www.w3schools.com/tags/tag_col.asp">&lt;col&gt;</a></div>
+		<div><a href="https://www.w3schools.com/tags/tag_thead.asp">&lt;thead&gt;</a></div>
+		<div><a href="https://www.w3schools.com/tags/tag_tbody.asp">&lt;tbody&gt;</a></div>
+		<div><a href="https://www.w3schools.com/tags/tag_tfoot.asp">&lt;tfoot&gt;</a></div>
+		
+		<h3>4. 테이블 관련 속성</h3>
+		<div>colspan</div>
+		<div>rowspan</div>
+		<div>
+			<ol>
+				<li>&lt;!DOCTYPE html&gt;</li>
+				<li>&lt;html&gt;</li>
+				<li>&nbsp;  &lt;head&gt;</li>
+				<li>&nbsp;&nbsp;   &lt;meta charset="utf-8"&gt;</li>
+				<li>&nbsp;  &lt;style&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; table,tr,td {border:1px solid #000000}</li>
+				<li>&nbsp;    &lt;/style&gt;</li>
+				<li>    &lt;/head&gt;</li>
+				<li> </li>
+				<li>&nbsp; &lt;body&gt;</li>
+				<li>&nbsp;&nbsp; &lt;table&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td colspan="2"&gt;1&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;3&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;4&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;5&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;6&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;7&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;8&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;9&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp; &lt;/table&gt;</li>
+				<li>&nbsp;&nbsp; &lt;table&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td rowspan="2"&gt;1&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;2&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;3&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;5&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;6&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;7&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;8&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;9&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp; &lt;/table&gt;</li>
+				<li>&nbsp;&nbsp; &lt;table&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td colspan="2" rowspan="2"&gt;1&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;3&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;6&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;7&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;8&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;9&lt;/td&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/tr&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp; &lt;/table&gt;</li>
+				<li>&nbsp;&nbsp; &lt;/body&gt;</li>
+				<li>&nbsp; &lt;/html&gt;</li>
+			</ol>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<!-- 1번을 기준으로 열 2칸를 하나로 합침 -->
+					<td colspan="2">1</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+			</thead>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<!-- 1번을 기준으로 행 2칸를 하나로 합침 -->
+					<td rowspan="2">1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<tfoot>
+				<tr>
+					<!-- 1번을 기준은로 행 2칸과 열 2칸을 하나로 합침 -->
+					<td colspan="2" rowspan="2">1</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+	</body>		
+</html>
