@@ -10,11 +10,20 @@
 	<body>
 	<script>
 		function Result(){
-			String username1 = "jjdev";
-			String username2 = "jvdev";
-			String username3 = "jxdev";
-			String result = null;
-			if(username1.equals(username)){
+			var username = document.getElementsByName("username");
+			if(username.equals("jjdev")){
+				alert("중복입니다.");
+			}
+			else{
+				alert("중복이 아닙니다.");
+			}
+			if(username == "jvdev"){
+				alert("중복입니다.");
+			}
+			else{
+				alert("중복이 아닙니다.");
+			}
+			if(username == "jxdev"){
 				alert("중복입니다.");
 			}
 			else{
