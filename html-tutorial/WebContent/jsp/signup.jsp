@@ -8,29 +8,6 @@
 	</head>
 	
 	<body>
-	<script>
-		function Result(){
-			var username = document.getElementsByName("username");
-			if(username.equals("jjdev")){
-				alert("중복입니다.");
-			}
-			else{
-				alert("중복이 아닙니다.");
-			}
-			if(username == "jvdev"){
-				alert("중복입니다.");
-			}
-			else{
-				alert("중복이 아닙니다.");
-			}
-			if(username == "jxdev"){
-				alert("중복입니다.");
-			}
-			else{
-				alert("중복이 아닙니다.");
-			}
-		}
-	</script>
 		<h1>회원가입 폼</h1>
 		<div>
 			<a href="./jspIndex.jsp">목록</a>
@@ -43,7 +20,7 @@
 							<td><img src="../signup_image/check_icon.gif"></td>
 							<td><img src="../signup_image/idsearch_text01.gif"></td>
 							<td>
-								<input type="text" name="username" placeholder="영문이름만 사용" required="required">
+								<input type="text" id="user" name="username" placeholder="영문이름만 사용" required="required">
 								<input type="button" value="중복확인" onclick="Result()">&nbsp;띄어쓰기 없는 영문소문자, 숫자조합
 							</td>
 						</tr>
